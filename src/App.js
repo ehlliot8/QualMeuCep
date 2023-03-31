@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import { Button, Heading, Box, Input, Text } from 'dracula-ui'
 
@@ -37,13 +37,27 @@ function App() {
   }
 
   return (
-    <div className="App" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh' }}>
+
+    <div className="App" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh', flexDirection:'column' }}>
+
+      <div>
+          <h1 className='tittle-menu' style={{color:'#FF6D28', fontSize:'50px'}}>QualMeuCep<img src='./mapa-brasil.png' alt='logo'style={{width:'40px'}}/></h1>
+          
+      </div>
+
       <Box color="yellowPink" width="xl" rounded="lg" p="xs" mb="lg" style={{ padding: '50px' }}>
         <Heading color="black" size="lg">Encontre o CEP da sua localização atual:</Heading>
-        <Input disabled class="result-get" placeholder="Cep..." color="white" value={cep} style={{ width: '40%' }} />
+
+        <div className='result-get-view' style={{paddingTop: "21px;"}}>
+          <Input disabled placeholder="Cep..." color="white" value={cep} style={{ width: '55%', textAlign:'center'  }} />
+        </div>
+
         {viewGetCep && <Button onClick={copyCep} color="purpleCyan" m="sm">Copiar</Button>}
         <Button onClick={getCep} color="purpleCyan" m="sm">Buscar</Button>
+
+        <div className="txt-copied">
         {viewCopied &&<Text color="#D8D8D8">Copiado com sucesso</Text>}
+        </div>
       </Box>
     </div>
   );

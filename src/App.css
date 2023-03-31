@@ -36,10 +36,40 @@
     transform: rotate(360deg);
   }
 }
-.result-get {
-  font-size: 24px;
-  margin-top: 20px;
-}
+
 body{
   background-color: #191825;
+}
+
+.tittle-menu{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.result-get-view{
+ text-align: center;
+  width: 100%;
+  margin-top: 10px; 
+  flex-direction: column;
+}  
+
+
+
+@media (max-width: 420px) {
+  .result-get-view{
+    width: 100%;
+    
+    
+  }  
+  .txt-copied{
+    margin: 4px;
+  }              
+}
+
+@media (max-width: 650px) {
+  .App {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 55px;
+  }
 }
