@@ -44,8 +44,8 @@ function App() {
           <h1 className='tittle-menu' style={{color:'#FF6D28', fontSize:'50px'}}>QualMeuCep<img src='./mapa-brasil.png' alt='logo'style={{width:'40px'}}/></h1>
           
       </div>
-
-      <Box color="yellowPink" width="xl" rounded="lg" p="xs" mb="lg" style={{ padding: '50px' }}>
+      <div className='container-box'>
+      <Box color="yellowPink" width="xl" rounded="lg" p="xs" mb="lg" style={{ padding: '50px', width:'100%' }}>
         <Heading color="black" size="lg">Encontre o CEP da sua localização atual:</Heading>
 
         <div className='result-get-view' style={{paddingTop: "21px;"}}>
@@ -59,6 +59,7 @@ function App() {
         {viewCopied &&<Text color="#D8D8D8">Copiado com sucesso</Text>}
         </div>
       </Box>
+      </div>
     </div>
   );
 }

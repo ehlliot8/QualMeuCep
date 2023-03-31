@@ -52,6 +52,9 @@ body{
   flex-direction: column;
 }  
 
+.container-box{
+  width: 40%;
+}
 
 
 @media (max-width: 420px) {
@@ -62,7 +65,10 @@ body{
   }  
   .txt-copied{
     margin: 4px;
-  }              
+  }
+  .container-box{
+    width: 95%;
+  }             
 }
 
 @media (max-width: 650px) {
