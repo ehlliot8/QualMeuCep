@@ -38,27 +38,29 @@ function App() {
 
   return (
 
-    <div className="App" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh', flexDirection:'column' }}>
+    <div className="App" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh', flexDirection: 'column' }}>
 
       <div>
-          <h1 className='tittle-menu' style={{color:'#FF6D28', fontSize:'50px'}}>QualMeuCep<img src='./mapa-brasil.png' alt='logo'style={{width:'40px'}}/></h1>
-          
+        <h1 className='tittle-menu' style={{ color: '#FF6D28', fontSize: '50px' }}>QualMeuCep<img src='./mapa-brasil.png' alt='logo' style={{ width: '40px' }} /></h1>
+
       </div>
       <div className='container-box'>
-      <Box color="yellowPink" width="xl" rounded="lg" p="xs" mb="lg" style={{ padding: '50px', width:'100%' }}>
-        <Heading color="black" size="lg">Encontre o CEP da sua localização atual:</Heading>
+        <Box color="yellowPink" width="xl" rounded="lg" p="xs" mb="lg" style={{ padding: '50px', width: '100%' }}>
+          <Heading color="black" size="lg">Encontre o CEP da sua localização atual:</Heading>
 
-        <div className='result-get-view' style={{padding: "9%;"}}>
-          <Input disabled placeholder="Cep..." color="white" value={cep} style={{    width:'65%', textAlign:'center'  }} />
-        </div>
+          <div className='result-get-view' style={{ padding: "9%;" }}>
+            <Input disabled placeholder="Cep..." color="white" value={cep} style={{ width: '65%', textAlign: 'center' }} />
+          </div>
 
-        {viewGetCep && <Button onClick={copyCep} color="purpleCyan" m="sm">Copiar</Button>}
-        <Button onClick={getCep} color="purpleCyan" m="sm">Buscar</Button>
+          <div className='btns-card' >
+            {viewGetCep && <Button className='btn-card' onClick={copyCep} color="purpleCyan" m="sm">Copiar</Button>}
+            <Button className='btn-card' onClick={getCep} color="purpleCyan" m="sm">Buscar</Button>
+          </div>
 
-        <div className="txt-copied">
-        {viewCopied &&<Text color="#D8D8D8">Copiado com sucesso</Text>}
-        </div>
-      </Box>
+          <div className="txt-copied">
+            {viewCopied && <Text color="#D8D8D8">Copiado com sucesso</Text>}
+          </div>
+        </Box>
       </div>
     </div>
   );
