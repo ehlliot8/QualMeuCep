@@ -32,30 +32,38 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-body{
+body {
   background-color: #191825;
 }
 
-.tittle-menu{
+.tittle-menu {
   font-family: 'Open Sans', sans-serif;
 }
 
-.result-get-view{
- text-align: center;
+.result-get-view {
+  text-align: center;
   width: 100%;
-  margin-top: 10px; 
+  margin-top: 10px;
   flex-direction: column;
-}  
+}
 
-.container-box{
+.container-box {
   width: 40%;
 }
-.btns-card{
+
+.btns-card {
   display: flex;
 }
 
+@media (max-width: 885px) {
+  .container-box {
+    width: 100%;
+  }
+
+}
