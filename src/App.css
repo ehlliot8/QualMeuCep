@@ -59,9 +59,7 @@ body{
 
 @media (max-width: 420px) {
   .result-get-view{
-    width: 100%;
-    
-    
+    width: 100%;    
   }  
   .txt-copied{
     margin: 4px;

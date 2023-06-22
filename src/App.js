@@ -49,7 +49,7 @@ function App() {
         <Heading color="black" size="lg">Encontre o CEP da sua localização atual:</Heading>
 
         <div className='result-get-view' style={{paddingTop: "21px;"}}>
-          <Input disabled placeholder="Cep..." color="white" value={cep} style={{ width: '55%', textAlign:'center'  }} />
+          <Input disabled placeholder="Cep..." color="white" value={cep} style={{ width: '80%', textAlign:'center'  }} />
         </div>
 
         {viewGetCep && <Button onClick={copyCep} color="purpleCyan" m="sm">Copiar</Button>}
