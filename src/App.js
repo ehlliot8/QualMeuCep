@@ -48,7 +48,7 @@ function App() {
       <Box color="yellowPink" width="xl" rounded="lg" p="xs" mb="lg" style={{ padding: '50px', width:'100%' }}>
         <Heading color="black" size="lg">Encontre o CEP da sua localização atual:</Heading>
 
-        <div className='result-get-view' style={{paddingTop: "21px;"}}>
+        <div className='result-get-view' style={{padding: "9%;"}}>
           <Input disabled placeholder="Cep..." color="white" value={cep} style={{    width:'65%', textAlign:'center'  }} />
         </div>
 

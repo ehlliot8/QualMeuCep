@@ -61,6 +61,16 @@ body{
   .result-get-view{
     width: 100%;    
   }  
+}
+@media (max-width: 820px) {
+  .result-get-view{
+    width: 75%;
+  }  
+}
+@media (max-width: 420px) {
+  .result-get-view{
+    width: 100%;    
+  }  
   .txt-copied{
     margin: 4px;
   }
@@ -76,4 +86,12 @@ body{
     padding-bottom: 50px;
     padding-top: 55px;
   }
+  .container-box{
+    width: 90%;
+  } 
+} 
+@media (min-width: 1150px) {
+  .container-box{
+    width: 50%;
+  }  
 }
