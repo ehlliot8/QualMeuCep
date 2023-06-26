@@ -53,17 +53,23 @@ body {
   flex-direction: column;
 }
 
-.container-box {
-  width: 40%;
-}
 
 .btns-card {
   display: flex;
 }
+.container-box {
+  width: 40%;
+}
 
-@media (max-width: 885px) {
-  .container-box {
+
+@media (max-width: 885px){
+.App {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 55px;
+    width: 90%;
+  }
+.container-box {
     width: 100%;
   }
-
 }
